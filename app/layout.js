@@ -10,9 +10,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <html lang="en" >
+      <head>
+        <script src="../path/to/flowbite/dist/flowbite.min.js" ></script>
+      </head>
+      <body className={'${inter.className} bg-main' } >{children}</body>
+      
     </html>
   )
 }

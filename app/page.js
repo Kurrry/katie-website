@@ -10,38 +10,35 @@ const photos2 = ["/6.jpg", "/7.jpg", "/8.jpg", "/9.jpg", "/10.jpg"];
 export default function Home() {
   return (
     <main>
-      <div className="bg-teal-100 sm:grid sm:grid-cols-2 sm:gap-x-6 lg:gap-x-0">
-
-        <section className="w-auto">
-          <Card className="flex flex-col w-fit sm:mt-4 sm:ml-1 md:mt-8 md:ml-10 lg:mt-16 lg:ml-40 xl:ml-100 bg-black-600 lg:p-3 sm:p-0 border-collapse h-fit">
-            <h1 className="font-times-new-roman font-bold italic ml-32 w-fit">
-              Katie Ho
-            </h1>
-            <Image
-              className="ml-8"
-              src="/katie.jpg"
-              alt="Katie"
-              width={250}
-              height={250}
-              priority
-            />
-            <div className="flex flex-row space-x-2 mt-2">
-              <SelectButton label="STYLES" />
-              <SelectButton label="BOOKING" />
-              <SelectButton label="POLICY" />
-              <SelectButton label="ABOUT ME" />
-            </div>
-          </Card>
-        </section>
-        <section className="p-3 sm:mr-5 mr-56">
-          <div className="h-56 w-100 sm:h-64 sm:w-100 xl:h-80 xl:w-auto 2xl:h-96">
-            <CarouselComp photos={photos1} />
+      <div className="bg-main sm:grid sm:grid-cols-12 sm:gap-x-6 lg:gap-x-0 pl-4 pr-4 pb-0 pt-0">
+        <section className="p-6 sm:col-span-6 2xl:col-span-5">
+          <div className="w-auto fixed">
+            <Card className="flex flex-col w-fit sm:mt-4 md:mt-8 md:ml-20 lg:mt-16 lg:ml-40 xl:ml-80 bg-black-600 lg:p-3 sm:p-0 border-collapse h-fit">
+              <h1 className="font-times-new-roman font-bold text-lg italic ml-24 w-fit">
+                Katie Ho
+              </h1>
+              <Image
+                src="/katie.jpg"
+                alt="Katie"
+                width={250}
+                height={250}
+                priority
+              />
+              <div className="flex flex-row space-x-2 mt-1">
+                <SelectButton label="BOOKING" />
+                <SelectButton label="GALLERY" />
+                <SelectButton label="POLICY" />
+              </div>
+            </Card>
           </div>
-          <br />
-          <div className="h-56 w-100 sm:h-64 sm:w-100 xl:h-80 xl:w-auto 2xl:h-96">
+        </section>
+
+        <section className="p-3 sm:mr-5 sm:col-span-6 2xl:col-span-7">
+          <div className="hidden sm:grid sm:grid-rows-2 sm:gap-y-2">
+            <CarouselComp photos={photos1} />
+            <CarouselComp photos={photos2} />
             <CarouselComp photos={photos2} />
           </div>
-          
         </section>
       </div>
     </main>
@@ -50,7 +47,7 @@ export default function Home() {
 
 function CarouselComp({ photos }) {
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+    <div className="h-auto w-auto sm:h-64 md:h-72 lg:h-80 xl:h-96 xl:w-auto 2xl:h-100 ">
       <Carousel>
         <img src={photos[0]} alt="..." />
         <img src={photos[1]} alt="..." />
