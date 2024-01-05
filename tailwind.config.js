@@ -21,10 +21,15 @@ module.exports = {
       },
       height: {
         '100': '30rem',
+        'carousel': '34rem',
       },
       width: {
         '100': '30rem',
         '101': '34rem',
+        'carousel': '41rem',
+      },
+      padding: {
+        'buttonText': '1.6rem',
       },
     },
     fontSize: {
