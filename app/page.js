@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { SelectButton } from "./components/SelectButton";
 import { Carousel } from "flowbite-react";
-import { Card } from "flowbite-react";
 
 const photos1 = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
 
@@ -34,6 +33,26 @@ export default function Home() {
                 <SelectButton label="BOOKING" />
                 <SelectButton label="GALLERY" />
                 <SelectButton label="POLICY" />
+              </div>
+              <div className="flex flex-row md:pl-2 md:space-x-3 md:pt-1 2xl:space-x-8 2xl:pl-12 2xl:pt-2">
+                <div className="flex flex-row">
+                  <Image
+                    src="/insta.png"
+                    alt="Instagram"
+                    width={25}
+                    height={25}
+                  />
+                  <a href="https://www.instagram.com/katie.justwink/"><h1 className="hover:text-gray-700 pl-1 underline">katie.justwink</h1></a>
+                </div>
+                <div className="flex flex-row">
+                  <Image
+                    src="/pin.png"
+                    alt="Instagram"
+                    width={25}
+                    height={25}
+                  />
+                  <a href="https://maps.app.goo.gl/ebj2XMAXXGEhkrjT6"><h1 className="hover:text-gray-700 pl-1 underline">Okotoks, Alberta</h1></a>
+                </div>
               </div>
             </div>
           </div>
