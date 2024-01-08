@@ -14,7 +14,8 @@ export default function RootLayout({ children }) {
       <head>
         <script src="../path/to/flowbite/dist/flowbite.min.js" ></script>
       </head>
-      <body className={'${inter.className} bg-main' } >{children}</body>
+      <body className={'${inter.className} bg-main' } >
+        {children}</body>
       
     </html>
   )
