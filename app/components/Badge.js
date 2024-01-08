@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { SelectButton } from "./SelectButton";
+import  SelectButton from "./SelectButton";
 
 export default function Badge() {
     return (
