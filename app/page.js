@@ -34,7 +34,7 @@ export default function Home() {
                 <SelectButton label="GALLERY" />
                 <SelectButton label="POLICY" />
               </div>
-              <div className="flex flex-row md:pl-2 md:space-x-3 md:pt-1 2xl:space-x-8 2xl:pl-12 2xl:pt-2">
+              <div className="flex flex-row md:pl-5 md:space-x-3 md:pt-1 2xl:space-x-8 2xl:pl-16 2xl:pt-2">
                 <div className="flex flex-row">
                   <Image
                     src="/insta.png"
@@ -42,7 +42,7 @@ export default function Home() {
                     width={25}
                     height={25}
                   />
-                  <a href="https://www.instagram.com/katie.justwink/"><h1 className="hover:text-gray-700 pl-1 underline">katie.justwink</h1></a>
+                  <a href="https://www.instagram.com/katie.justwink/"><h1 className="hover:text-gray-700 pl-1 underline">blinksbykt</h1></a>
                 </div>
                 <div className="flex flex-row">
                   <Image
@@ -55,6 +55,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <Image
+            className="2xl:ml-80"
+              src="/logoText.png"
+              alt="Blinks by KT"
+              width={300}
+              height={300}
+            />
           </div>
         </section>
 
