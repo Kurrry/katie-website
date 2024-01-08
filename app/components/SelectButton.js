@@ -1,6 +1,6 @@
 
 
-export function SelectButton({label}) {
+export default function SelectButton({label}) {
     //console.log(label);
     return(
         <div>
